@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yogesh Portfolio</title>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">Y</span> Yogesh</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.jpeg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Hi,<br />I'm <br />YOGESH</h1>
+        </div>
+        <p class="section__description">
+          Final-year Electronics & Telecommunication Engineering student with practical experience in embedded systems, IoT, and 
+          wireless sensor networks. Skilled in C++, Python, and real-time data acquisition. Successfully delivered projects using LoRa, GPS, 
+          GSM, and various gas sensors. Seeking a role in embedded software development or IoT product engineering.
+        </p>
+        <div class="header__btn">
+          <button class="btn">Hire Me Now</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+        <img src="assets/about.jpg" alt="about" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Bit About Me</h2>
+        <p class="section__description">
+          I'm Thorat Yogesh Santosh, an Electronics and Telecommunication Engineering student at Jayawantrao Sawant College of Engineering, Pune. I’m passionate about IoT, Embedded Systems, Game Development, and AI. I’ve worked on smart infrastructure projects like street light fault detection using LoRa and completed a current sensing internship with international testing exposure. <br><br>
+          Currently, I’m the Vice President of TESA and a participant in Smart India Hackathon 2024. I enjoy solving real-world problems through technology and constantly learning new things.
+        </p>
+        <div class="about__btn">
+          <a href="https://drive.google.com/file/d/1mfGGGLELVtsGbji8KjNwEM-WZgl6dog-/view?usp=drivesdk" class="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container project__container" id="project">
+      <h2 class="section__header">My Best Projects</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-dashboard-line"></i></span>
+          <h4>Smart Street Light Monitoring</h4>
+          <p> Developed a LoRa-based smart monitoring system for detecting faults in street lights and locating them using GPS coordinates. 
+            The system detects parameters like voltage/current drop or open circuit faults and transmits the data to a central dashboard. 
+            By integrating Google Maps API, maintenance teams can visualize exact fault locations for timely repair.
+            <br><strong>Technologies Used:</strong> LoRa RA-02, NodeMCU (ESP8266), GPS Module (NEO-6M), Google Maps API, Arduino IDE, HTML/CSS.
+            <br><strong>Features:</strong> Real-time fault detection, GPS-based location tracking, Long-range communication, Low power.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-shopping-bag-line"></i></span>
+          <h4>Online Shopping App</h4>
+          <p>A responsive e-commerce frontend developed using HTML, CSS, and JavaScript. 
+            It simulates a shopping platform with product cards, cart management, price calculation, and filtering options.
+            <br><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript, LocalStorage, Media Queries.
+            <br><strong>Features:</strong> Add-to-cart & remove, product filtering, price summary, responsive UI.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-sensor-line"></i></span>
+          <h4>Gas Detection System</h4>
+          <p>An IoT-based gas monitoring solution using MQ-4, MQ-7, and MQ-135 sensors connected to ESP32. 
+            Data is sent via Wi-Fi to a XAMPP-based MySQL server and visualized using a PHP dashboard. 
+            Alerts are triggered when thresholds are exceeded.
+            <br><strong>Technologies Used:</strong> ESP32, MQ-series sensors, XAMPP, MySQL, PHP, Arduino IDE.
+            <br><strong>Features:</strong> Real-time monitoring, database logging, web dashboard, safety alerts.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-body-scan-line"></i></span>
+          <h4>GYM Application</h4>
+          <p>A web-based Gym Management System that allows users to register, track workouts, and view schedules. 
+            Trainers can assign routines and manage members. Built using React and Firebase.
+            <br><strong>Technologies Used:</strong> React.js, Firebase, Firestore, Tailwind CSS.
+            <br><strong>Features:</strong> Member & trainer login, schedule management, responsive design, cloud integration.
+          </p>
+        </div>
+        <!--<div class="service__card">
+          <span><i class="ri-code-box-line"></i></span>
+          <h4>Student Management System</h4>
+          <p>Developed a full-stack software system to manage student records, attendance, and performance using Python, Flask, and MySQL.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-dashboard-line"></i></span>
+          <h4>Task Tracker Web App</h4>
+          <p>A simple task management software built with React and Firebase to help users manage daily to-dos with real-time syncing and UI state management.</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="section__container portfolio__container" id="portfolio">
+      <h2 class="section__header">My Portfolio</h2>
+      <p class="section__description">
+        Explore a showcase of my diverse projects, demonstrating my skills in web development, design, and beyond. Each project reflects my passion for creating impactful and innovative digital experiences.
+      </p>
+      <div class="portfolio__grid">
+        <div class="portfolio__card"><img src="assets/project-1.jpg" alt="portfolio" /></div>
+        <div class="portfolio__card"><img src="assets/project-2.jpg" alt="portfolio" /></div>
+        <div class="portfolio__card"><img src="assets/project-3.jpg" alt="portfolio" /></div>
+        <div class="portfolio__card"><img src="assets/project-4.jpg" alt="portfolio" /></div>
+        <div class="portfolio__card"><img src="assets/project-5.jpg" alt="portfolio" /></div>
+        <div class="portfolio__card"><img src="assets/project-6.jpg" alt="portfolio" /></div>
+      </div>
+      <div class="portfolio__banner">
+        <div class="portfolio__banner__card">
+          <span><i class="ri-macbook-line"></i></span>
+          <h4>10+ Projects</h4>
+          <p>Delivered</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-discuss-line"></i></span>
+          <h4>10+ Initiatives</h4>
+          <p>Driven with Passion & Teamwork</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-heart-fill"></i></span>
+          <h4>100% Positive</h4>
+          <p>Feedback</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container contact__container" id="contact">
+      <div class="logo">Y</div>
+      <h2 class="section__header">Let's Talk With Me!</h2>
+      <p class="section__description">
+        An open invitation to connect and explore collaborative opportunities on my personal portfolio website.
+      </p>
+      <div class="contact__socials">
+        <a href="http://linkedin.com/in/yogeshthorat8658"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://github.com/Yogesh1751"><i class="ri-github-fill"></i></a>
+      </div>
+      <form id="contact-form" class="contact__form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-status" style="margin-top: 10px;"></p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      Copyright © 2023 Yogesh Portfolio. All rights reserved.
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          try {
+            const response = await fetch("https://formspree.io/f/manoeqjy", {
+              method: "POST",
+              headers: { Accept: "application/json" },
+              body: formData,
+            });
+            if (response.ok) {
+              status.innerHTML = "Message sent successfully!";
+              form.reset();
+            } else {
+              status.innerHTML = "Oops! There was a problem.";
+            }
+          } catch (error) {
+            status.innerHTML = "Oops! There was a problem.";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
